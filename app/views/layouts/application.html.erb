@@ -7,11 +7,16 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <!-- %= link_to "Home", root_path % -->
   <!-- %= link_to "About", about_path % -->
 
   <%= render 'layouts/header' %>
+  <div class="center">
+    <%= image_tag('In_Shop.jpg', id: 'front-page-sign', alt: 'front-page-sign') %>
+  </div>
+
   <div class="container">
     <%= yield %>
   </div>
