@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
 $body-bg:    #2c3e50;
-$font-family-sans-serif:  'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family: 'Coming Soon', cursive;
 $navbar-height:   35px;
 $navbar-default-bg: #7f8c8d;
 $navbar-default-brand-color: #ecf0f1;
@@ -13,6 +13,11 @@ $jumbotron-bg:    #7f8c8d;
 
 @import 'bootstrap';
 
+body {
+background-image: image-url('bg.jpg');
+background-repeat: no-repeat;
+background-size: 100%
+}
 .center {
   text-align: center;
 }

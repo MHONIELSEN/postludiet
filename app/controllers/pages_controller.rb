@@ -2,7 +2,10 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def kontakt
   end
 
+  def webshop
+  end
+  
 end
