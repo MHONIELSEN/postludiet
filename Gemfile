@@ -23,7 +23,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'devise', '~> 3.1.0.rc2'
 
-gem 'paperclip', '~> 3.0', github: 'thoughtbot/paperclip'
+gem 'paperclip', '~> 3.0'
 
 gem 'bootstrap-sass'
 # Use ActiveModel has_secure_password

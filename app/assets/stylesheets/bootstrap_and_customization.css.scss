@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 $body-bg:    #2c3e50;
-$font-family: 'Coming Soon', cursive;
+$font-family: 'Coming Soon';
 $navbar-height:   35px;
 $navbar-default-bg: #7f8c8d;
 $navbar-default-brand-color: #ecf0f1;
@@ -16,7 +17,11 @@ $jumbotron-bg:    #7f8c8d;
 body {
 background-image: image-url('bg.jpg');
 background-repeat: no-repeat;
-background-size: 100%
+background-size: cover;
+overflow: hidden;
+width: 100%;
+height: 100%;
+font-family: 'Shadows Into Light', cursive;
 }
 .center {
   text-align: center;
