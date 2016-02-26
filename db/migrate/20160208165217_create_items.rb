@@ -1,7 +1,7 @@
 class CreateItems < ActiveRecord::Migration
   def change
     create_table :items do |t|
-      t.string :imoge
+      t.file :image
       t.string :artist
       t.string :description
       t.integer :price

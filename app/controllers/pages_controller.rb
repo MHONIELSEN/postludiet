@@ -7,5 +7,7 @@ class PagesController < ApplicationController
 
   def webshop
   end
-  
+
+  def item
+  end
 end
