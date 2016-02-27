@@ -1,13 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  image: MyString
-  artist: MyString
   description: MyString
-  price: 1
 
 two:
-  image: MyString
-  artist: MyString
   description: MyString
-  price: 1

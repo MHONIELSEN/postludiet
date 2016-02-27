@@ -1,26 +1,9 @@
-<div class="jumbotron">
-  <%= image_tag @item.image.url %>
+<p id="notice"><%= notice %></p>
 
 <p>
-  <strong>billede:</strong>
-  <%= @item.image %>
-</p>
-
-<p>
-  <strong>Kunstner:</strong>
-  <%= @item.artist %>
-</p>
-
-<p>
-  <strong>Beskrivelse:</strong>
+  <strong>Description:</strong>
   <%= @item.description %>
-</p>
-
-<p>
-  <strong>Pris:</strong>
-  <%= @item.price %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
-</div>
