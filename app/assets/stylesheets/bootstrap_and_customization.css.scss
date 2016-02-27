@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 $body-bg:    #2c3e50;
+
 $font-family: 'Coming Soon';
 $navbar-height:   35px;
 $navbar-default-bg: #7f8c8d;
@@ -21,7 +21,7 @@ background-size: cover;
 overflow: hidden;
 width: cover;
 height: cover;
-font-family: 'Shadows Into Light', cursive;
+font-family: 'Comming Soon', cursive;
 }
 .center {
   text-align: center;
@@ -29,4 +29,8 @@ font-family: 'Shadows Into Light', cursive;
 
 .navbar-brand {
   font-weight: bold;
+}
+
+p {
+  font-family: 'Comming Soon', cursive;
 }
