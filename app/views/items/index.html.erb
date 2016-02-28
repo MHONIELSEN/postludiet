@@ -4,6 +4,7 @@
 <table>
   <thead>
     <tr>
+      <th>Billede</th>
       <th>Beskrivelse</th>
       <!-- th colspan="3"></th -->
       <th> bruger </th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
+        <td><%= image_tag item.image.url(:thumb) %></td>
         <td><%= item.description %></td>
         <td><%= item.user.email if item.user %></td>
         <td>  <%= link_to 'Vis', item %></td>
