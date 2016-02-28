@@ -5,7 +5,9 @@
   <thead>
     <tr>
       <th>Beskrivelse</th>
-      <th colspan="3"></th>
+      <!-- th colspan="3"></th -->
+      <th> bruger </th>
+      <!-- th colspan="3"></th -->
     </tr>
   </thead>
 
@@ -13,9 +15,16 @@
     <% @items.each do |item| %>
       <tr>
         <td><%= item.description %></td>
-        <td>  <%= link_to 'Show', item %></td>
+        <td><%= item.user.email if item.user %></td>
+        <td>  <%= link_to 'Vis', item %></td>
+
+        <% if item.user == current_user %>
+
         <td>  <%= link_to 'Edit', edit_item_path(item) %></td>
-        <td>  <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>  <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Er du sikker?' } %></td>
+
+        <% end %>
+
       </tr>
     <% end %>
   </tbody>
@@ -23,5 +32,7 @@
 
 <br>
 
+<% if user_signed_in? %>
 <%= link_to 'New Item', new_item_path %>
+<% end %>
 </div>
