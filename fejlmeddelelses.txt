@@ -1,0 +1,5 @@
+* You must set the `s3_region`
+remote:        * If you are explicitly setting permissions anywhere, such as in an initializer,
+remote:        note that the format of the permissions changed from using an underscore to
+remote:        using a hyphen. For example, `:public_read` needs to be changed to
+remote:        `public-read`.

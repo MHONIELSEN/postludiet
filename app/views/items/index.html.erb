@@ -1,40 +1,21 @@
 <div class="jumbotron">
-<h2>Vare oversigt</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Billede</th>
-      <th>Beskrivelse</th>
-      <!-- th colspan="3"></th -->
-      <th> bruger </th>
-      <!-- th colspan="3"></th -->
-    </tr>
-  </thead>
+  <div id="items">
+  <% @items.each do |item| %>
+    <!-- div class="box" -->
+      <%= link_to image_tag( item.image.url(:thumb)), item %>
+      <% item.description %>
+      <% item.user.email if item.user %>
+      <% if item.user == current_user %>
+        <% link_to 'Edit', edit_item_path(item) %>
+        <% link_to 'Destroy', item, method: :delete, data: { confirm: 'Er du sikker?' } %>
+      <% end %>
+    <!-- /div -->
+  <% end %>
 
-  <tbody>
-    <% @items.each do |item| %>
-      <tr>
-        <td><%= image_tag item.image.url(:thumb) %></td>
-        <td><%= item.description %></td>
-        <td><%= item.user.email if item.user %></td>
-        <td>  <%= link_to 'Vis', item %></td>
 
-        <% if item.user == current_user %>
-
-        <td>  <%= link_to 'Edit', edit_item_path(item) %></td>
-        <td>  <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Er du sikker?' } %></td>
-
-        <% end %>
-
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<% if user_signed_in? %>
-<%= link_to 'New Item', new_item_path %>
-<% end %>
+  <% if user_signed_in? %>
+    <% link_to 'New Item', new_item_path %>
+  <% end %>
+  </div>
 </div>
