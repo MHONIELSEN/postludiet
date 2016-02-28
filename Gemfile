@@ -14,7 +14,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass'
 gem 'devise', '~> 3.1.0.rc2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk', '~>1.16.1'
+#gem 'aws-sdk', '~>1.16.1'
+gem 'aws-sdk'
 gem 'masonry-rails', '~> 0.2.0'
 
 
