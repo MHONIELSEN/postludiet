@@ -1,5 +1,14 @@
-* You must set the `s3_region`
+
+remote:        Post-install message from paperclip:
+remote:        ##################################################
+remote:        #  NOTE FOR UPGRADING FROM 4.3.0 OR EARLIER       #
+remote:        ##################################################
+remote:        Paperclip is now compatible with aws-sdk >= 2.0.0.
+remote:        If you are using S3 storage, aws-sdk >= 2.0.0 requires you to make a few small
+remote:        changes:
+remote:        * You must set the `s3_region`
 remote:        * If you are explicitly setting permissions anywhere, such as in an initializer,
 remote:        note that the format of the permissions changed from using an underscore to
 remote:        using a hyphen. For example, `:public_read` needs to be changed to
 remote:        `public-read`.
+remote:        Bundle completed (4.72s)
