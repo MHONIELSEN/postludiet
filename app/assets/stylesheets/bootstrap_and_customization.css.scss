@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
-$body-bg:    #2c3e50;
+$body-bg:    #7f8c8d;
+
 
 $font-family: 'Coming Soon';
 $navbar-height:   35px;
@@ -9,7 +10,7 @@ $navbar-default-brand-color: #ecf0f1;
 $navbar-default-brand-hover-color: #2c3e50;
 $navbar-default-link-color:  #ecf0f1;
 $navbar-default-link-hover-color: #2c3e50;
-$jumbotron-bg:    #7f8c8d;
+$jumbotron-bg:    #2c3e50;
 
 
 @import 'bootstrap';
@@ -21,6 +22,7 @@ background-repeat: no-repeat;
 #overflow: hidden;
 #width: cover;
 #height: cover;
+color: #7f8c8d;
 font-family: 'Comming Soon', cursive;
 }
 .center {
@@ -29,8 +31,4 @@ font-family: 'Comming Soon', cursive;
 
 .navbar-brand {
   font-weight: bold;
-}
-
-p {
-  font-family: 'Comming Soon', cursive;
 }

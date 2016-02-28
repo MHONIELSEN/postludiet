@@ -12,3 +12,6 @@ remote:        note that the format of the permissions changed from using an und
 remote:        using a hyphen. For example, `:public_read` needs to be changed to
 remote:        `public-read`.
 remote:        Bundle completed (4.72s)
+
+
+Aws::Errors::MissingRegionError: missing region; use :region option or export region name to ENV['AWS_REGION']
