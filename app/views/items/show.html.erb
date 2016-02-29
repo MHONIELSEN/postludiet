@@ -1,14 +1,16 @@
 <div class="jumbotron">
+  <%= image_tag @item.image.url(:medium) %>
 
+  <div class="panel-body">
+    <p>
+      <%= @item.description %>
+    </p>
 
-<%= image_tag @item.image.url(:medium) %>
-
-<%= @item.description %>
-
-<% if @item.user == current_user %>
-<div class="actions">
-  <%= link_to 'Edit', edit_item_path(@item) %> |
-<% end %>
-<%= link_to 'Back', items_path %>
-</div>
+  <% if @item.user == current_user %>
+    <div class="actions">
+      <%= link_to 'Edit', edit_item_path(@item) %> |
+  <% end %>
+      <%= link_to 'Back', items_path %>
+    </div>
+  </div>
 </div>

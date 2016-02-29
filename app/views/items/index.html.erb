@@ -1,21 +1,26 @@
 <div class="jumbotron">
-
   <div id="items" class="transitions-enabled">
-  <% @items.each do |item| %>
+    <% @items.each do |item| %>
       <% if item.image %>
         <%= link_to image_tag( item.image.url(:thumb)), item if item.image %>
       <% end %>
+
       <% item.description %>
       <% item.user.email if item.user %>
-      <% if item.user == current_user %>
-        <% link_to 'Edit', edit_item_path(item) %>
-        <% link_to 'Destroy', item, method: :delete, data: { confirm: 'Er du sikker?' } %>
+        <% if item.user == current_user %>
+          <div class="actions">
+            <% link_to 'Edit', edit_item_path(item) %>
+            <% link_to 'Destroy', item, method: :delete, data: { confirm: 'Er du sikker?' } %>
+          </div>
+        <% end %>
+
+
+
+      <% if user_signed_in? %>
+        <% link_to 'New Item', new_item_path %>
       <% end %>
-  <% end %>
 
 
-  <% if user_signed_in? %>
-    <% link_to 'New Item', new_item_path %>
-  <% end %>
+    <% end %>
   </div>
 </div>

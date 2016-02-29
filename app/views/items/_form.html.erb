@@ -16,13 +16,25 @@
     <%= f.file_field :image %>
   </div>
 
+  <div class="form-group">
+    <%= f.label :kunstner %><br>
+    <%= f.text_field :kunstner %>
+  </div>
+
 
   <div class="form-group">
     <%= f.label :description %><br>
     <%= f.text_field :description %>
   </div>
   <div class="actions">
-    
+
+    <div class="form-group">
+      <%= f.label :pris %><br>
+      <%= f.text_field :pris %>
+    </div>
+
+
+
     <%= f.submit %>
   </div>
 <% end %>
