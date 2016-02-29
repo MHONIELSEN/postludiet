@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   get "contact" => "pages#kontakt"
-  get "webshop" => "items#index"
+  get "webshop" => "pages#webshop"
+#  get "webshop" => "items#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

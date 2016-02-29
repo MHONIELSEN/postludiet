@@ -18,8 +18,15 @@ gem 'aws-sdk', '~> 2'
 #gem 'aws-sdk',
 gem 'masonry-rails', '~> 0.2.0'
 
+group :test do
+  gem 'sqlite3'
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard-minitest'
+end
 
-group :development, :test do
+
+group :development do
   gem 'sqlite3'
 end
 

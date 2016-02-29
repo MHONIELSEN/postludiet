@@ -3,7 +3,15 @@
 
   <div class="panel-body">
     <p>
+      <%= "Kunstner: " %>
+      <%= @item.kunstner %>
+    </p>
+    <p>
       <%= @item.description %>
+    </p>
+    <p>
+      <%= "Pris: "  %>
+      <%= @item.pris %>
     </p>
 
   <% if @item.user == current_user %>
